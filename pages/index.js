@@ -1,7 +1,8 @@
 import Head from "next/head";
 // import { BiUserPlus } from "react-icons";
 import { BiUserPlus } from "react-icons/bi";
-
+import Table from "../components/table";
+import Form from "../components/form";
 export default function Home() {
   return (
     <section>
@@ -25,11 +26,19 @@ export default function Home() {
               </span>
             </button>
           </div>
-
-          {/* collapsable form */}
-
-          {/* table */}
         </div>
+
+        {/* collapsable form */}
+        <div className="container mx-auto py-5">
+          <Form></Form>
+        </div>
+        {/* End collapsable form */}
+
+        {/* table */}
+        <div className="container mx-auto">
+          <Table></Table>
+        </div>
+        {/* End table */}
       </main>
     </section>
   );
